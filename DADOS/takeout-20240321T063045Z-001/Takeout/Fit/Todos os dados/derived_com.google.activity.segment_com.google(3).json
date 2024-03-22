@@ -1,0 +1,8 @@
+{
+    "Data Source": "derived:com.google.activity.segment:com.google.android.gms:session_activity_segment",
+    "Data Points": [
+        {"fitValue":[{"value":{"intVal":7}}],"originDataSourceId":"derived:com.google.activity.segment:com.xiaomi.hm.health:session_activity_segment","endTimeNanos":1700588280000000000,"dataTypeName":"com.google.activity.segment","startTimeNanos":1700587680000000000,"modifiedTimeMillis":1700641327696,"rawTimestampNanos":0},
+        {"fitValue":[{"value":{"intVal":7}}],"originDataSourceId":"derived:com.google.activity.segment:com.xiaomi.hm.health:session_activity_segment","endTimeNanos":1700599920000000000,"dataTypeName":"com.google.activity.segment","startTimeNanos":1700599320000000000,"modifiedTimeMillis":1700641329496,"rawTimestampNanos":0},
+        {"fitValue":[{"value":{"intVal":108}}],"originDataSourceId":"derived:com.google.activity.segment:com.xiaomi.hm.health:session_activity_segment","endTimeNanos":1700604540000000000,"dataTypeName":"com.google.activity.segment","startTimeNanos":1700602320000000000,"modifiedTimeMillis":1700641329496,"rawTimestampNanos":0}
+    ]
+}

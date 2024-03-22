@@ -1,0 +1,10 @@
+{
+    "Data Source": "raw:com.google.step_count.delta:com.xiaomi.hm.health:GoogleFitSyncHelper- steps",
+    "Data Points": [
+        {"fitValue":[{"value":{"intVal":225}}],"originDataSourceId":"","endTimeNanos":1700587620000000000,"dataTypeName":"com.google.step_count.delta","startTimeNanos":1700535660000000000,"modifiedTimeMillis":1700641327694,"rawTimestampNanos":0},
+        {"fitValue":[{"value":{"intVal":198}}],"originDataSourceId":"","endTimeNanos":1700599260000000000,"dataTypeName":"com.google.step_count.delta","startTimeNanos":1700588340000000000,"modifiedTimeMillis":1700641329495,"rawTimestampNanos":0},
+        {"fitValue":[{"value":{"intVal":337}}],"originDataSourceId":"","endTimeNanos":1700601540000000000,"dataTypeName":"com.google.step_count.delta","startTimeNanos":1700599980000000000,"modifiedTimeMillis":1700641329495,"rawTimestampNanos":0},
+        {"fitValue":[{"value":{"intVal":63}}],"originDataSourceId":"","endTimeNanos":1700621940000000000,"dataTypeName":"com.google.step_count.delta","startTimeNanos":1700604600000000000,"modifiedTimeMillis":1700641329495,"rawTimestampNanos":0},
+        {"fitValue":[{"value":{"intVal":5}}],"originDataSourceId":"","endTimeNanos":1700638720780000000,"dataTypeName":"com.google.step_count.delta","startTimeNanos":1700622060000000000,"modifiedTimeMillis":1700641329495,"rawTimestampNanos":0}
+    ]
+}

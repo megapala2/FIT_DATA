@@ -1,0 +1,6 @@
+{
+    "Data Source": "raw:com.google.weight:com.google.android.apps.fitness:user_input",
+    "Data Points": [
+        {"fitValue":[{"value":{"fpVal":92}}],"originDataSourceId":"","endTimeNanos":1700581197225000000,"dataTypeName":"com.google.weight","startTimeNanos":1700581197225000000,"modifiedTimeMillis":1700581219271,"rawTimestampNanos":0}
+    ]
+}

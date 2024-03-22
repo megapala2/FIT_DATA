@@ -1,0 +1,27 @@
+{
+  "fitnessActivity": "other",
+  "startTime": "2023-11-21T21:32:00Z",
+  "endTime": "2023-11-21T22:09:00Z",
+  "duration": "2220s",
+  "segment": [{
+    "fitnessActivity": "other",
+    "startTime": "2023-11-21T21:32:00Z",
+    "endTime": "2023-11-21T22:09:00Z"
+  }],
+  "aggregate": [{
+    "metricName": "com.google.calories.expended",
+    "floatValue": 52.529706786458334
+  }, {
+    "metricName": "com.google.step_count.delta",
+    "intValue": 92
+  }, {
+    "metricName": "com.google.distance.delta",
+    "floatValue": 60.0
+  }, {
+    "metricName": "com.google.speed.summary",
+    "floatValue": 0.02702702702702703
+  }, {
+    "metricName": "com.google.active_minutes",
+    "intValue": 37
+  }]
+}
