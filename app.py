@@ -54,6 +54,9 @@ def clean_key_data(df_health, valor: str):
 
     if 'wake_up_time' in df_health.columns:
         df_health['wake_up_time'] = pd.to_datetime(df_health['wake_up_time'], unit='s', errors='coerce')
+
+    df_health = df_health.dropna()
+    df_health = df_health[(df_health.iloc[:, 1:] != 0).all(axis=1)]
     
    
     return df_health, json_df.columns.to_list()
@@ -82,10 +85,12 @@ def date_filter(df_health, startDate, endDate):
     return df_health
    
 def skill_chart(df, valor: str, cor: str):
- 
+
+    
     fig = px.bar(
         x=df['Date'], 
         y=df[valor], 
+        text=df[valor],
         color=df[cor],
         orientation='v',
         template='presentation',
@@ -143,7 +148,7 @@ if selecionado:
 
 with st.expander('DataFrame'):
     st.info(f'Rows of data: {len(df_steps)}')
-    st.dataframe(df_steps, use_container_width=True)
+
 
 fig = skill_chart(df_steps, valor=valores, cor=cor)
 st.plotly_chart(fig, use_container_width=True)
