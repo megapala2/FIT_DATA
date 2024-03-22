@@ -110,7 +110,7 @@ col1, col2, col3 = st.columns(3)
 sideCol1, sideCol2 = st.sidebar.columns(2)
 
 
-df = pd.read_csv(f'{os.getcwd()}\\DADOS\\HEALTH_DATA.csv')
+df = pd.read_csv(f'{os.getcwd()}/DADOS/HEALTH_DATA.csv')
 
 
 
