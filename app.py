@@ -7,15 +7,15 @@ import json
 from datetime import datetime
 
 #   PT:
-#   Essa função serve para limpar os dados, o dado em CSV vem com uma coluna "Value" onde possui um dicionário DENTRO da coluna, 
-#   entretanto, esse dicionário muda de acordo com o valor de "Key". Essa função vai limpar colunas dispensáveis para a leitura dos dados, arrumar a data,
-#   pegar cada valor do dicionário "Value" e criar uma nova coluna do DF
+#   Essa função serve para limpar os dados, o dado em CSV vem com uma coluna "Value" onde possui um json DENTRO da coluna, 
+#   entretanto, esse json muda de acordo com o valor de "Key". Essa função vai limpar colunas dispensáveis para a leitura dos dados, arrumar a data,
+#   pegar cada valor do json "Value" e criar uma nova coluna do DF
 
 
 #   EN:
-#   This function is intended to clean the data. The CSV data includes a column named "Value" which contains a dictionary WITHIN the column. However, 
-#   this dictionary varies according to the value of "Key". This function will clean unnecessary columns for data reading, 
-#   fix the date, extract each value from the "Value" dictionary, and create a new column in the DataFrame.
+#   This function is intended to clean the data. The CSV data includes a column named "Value" which contains a json WITHIN the column. However, 
+#   this json varies according to the value of "Key". This function will clean unnecessary columns for data reading, 
+#   fix the date, extract each value from the "Value" json, and create a new column in the DataFrame.
 
 
 def clean_key_data(df_health, valor: str):
@@ -148,7 +148,8 @@ if selecionado:
 
 with st.expander('DataFrame'):
     st.info(f'Rows of data: {len(df_steps)}')
-
+    st.dataframe(df_steps, use_container_width=True)
+    
 
 fig = skill_chart(df_steps, valor=valores, cor=cor)
 st.plotly_chart(fig, use_container_width=True)
