@@ -1,38 +1,47 @@
-Dashboard de Empresas Tóxicas do Brasil
-Este projeto consiste em um dashboard simples que analisa uma planilha do Google Sheets para identificar as empresas mais mencionadas em relação a comportamentos tóxicos no ambiente de trabalho. Ele permite aos usuários visualizar a contagem de ocorrências de palavras-chave específicas em relação a cada empresa listada na planilha.
 
-EMPRESAS TÓXICAS BRASIL.
+# MiBand Data Analysis
+Este projeto é uma aplicação para análise de dados coletados da MiBand. Ele permite visualizar e analisar diversas métricas de saúde registradas pela MiBand, como peso, batimentos cardíacos, estresse, passos, calorias queimadas, entre outros.
 
-EMPRESAS TÓXICAS BRASIL - FORMULÁRIO.
+## Instalação
+Para executar este projeto, siga estas etapas:
 
-Funcionalidades
-Análise de Planilha: O dashboard analisa uma planilha do Google Sheets para extrair dados sobre as empresas e as ocorrências de palavras-chave relacionadas a comportamentos tóxicos no ambiente de trabalho.
+**Clone o repositório**:
 
-Tradução de Nomes de Empresas: Utiliza um dicionário para traduzir diferentes variações de nomes de empresas para um valor padrão, facilitando a análise e a comparação entre empresas.
+```
+git clone https://github.com/seu-usuario/miband-data-analysis.git
+```
 
-Filtragem por Ocorrência de Palavras-chave: Permite aos usuários filtrar as ocorrências de palavras-chave, como "racismo", "machismo", "assédio", entre outras, para visualizar a contagem dessas ocorrências para cada empresa listada.
-
-Requisitos
-Python 3.x
-Bibliotecas Python: pandas, plotly, streamlit, fuzzywuzzy
-Instalação e Uso
-Clone o repositório para o seu ambiente local:
-bash
-Copy code
-git clone https://github.com/megapala2/Toxicas.git
-Instale as dependências do projeto:
-Copy code
-pip install pandas plotly streamlit fuzzywuzzy
-Execute o aplicativo Streamlit:
-arduino
-Copy code
+**Instale as dependências**:
+```
+pip install pandas streamlit plotly
+```
+**Execute o aplicativo**:
+```
 streamlit run app.py
-O navegador padrão será aberto exibindo o dashboard. Explore as empresas e as ocorrências de palavras-chave usando os filtros fornecidos.
-Observações
-O dicionário utilizado para traduzir os nomes das empresas pode ser atualizado conforme necessário para incluir mais variações ou empresas adicionais.
-Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias, correções de bugs ou novas funcionalidades.
-Principalmente para adicionar novas empresas na lista!
+```
 
-Licença
-Este projeto está licenciado sob a MIT License.
+## Como Usar
+Ao executar o aplicativo, você verá um menu à esquerda com opções de filtragem por data.
+Selecione um intervalo de datas para visualizar os dados.
+Escolha a categoria de dados que deseja analisar no menu suspenso.
+Selecione os valores que deseja observar nos gráficos.
+Os gráficos serão atualizados automaticamente com os valores selecionados.
+
+## Funcionalidades
+**Limpeza de Dados**: O aplicativo realiza a limpeza e formatação dos dados coletados da MiBand, incluindo a conversão de datas e remoção de colunas indesejadas.
+
+**Filtragem por Data**: Permite filtrar os dados por um intervalo de datas específico para uma análise mais precisa.
+
+**Visualização Interativa**: Utiliza a biblioteca Plotly para criar gráficos interativos que facilitam a análise e comparação dos dados.
+
+## Contribuição
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
