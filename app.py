@@ -203,9 +203,9 @@ df = pd.read_csv(f'{os.getcwd()}/DADOS/HEALTH_DATA.csv')
 
 
 filter_data_I = sideCol1.date_input(
-            'Start Date', value=datetime(2019, 1, 1), format="DD/MM/YYYY", key='dataInicial')
+            'Data Inicial', value=datetime(2019, 1, 1), format="DD/MM/YYYY", key='dataInicial')
 filter_data_F = sideCol2.date_input(
-            'End Date', value="today", format="DD/MM/YYYY", key='dataFinal')
+            'Data Final', value="today", format="DD/MM/YYYY", key='dataFinal')
 
 
 df_health = clean_date(df) 
@@ -238,7 +238,7 @@ with st.expander('DataFrame Bruto'):
 
 
 valores = col2.selectbox(label='Selecione o valor que deseja observar!', options=cols, index=None)
-cor = col3.selectbox(label='Selecione a cor da coluna!', options=cols, index=None)
+cor = col3.selectbox(label='Selecione o segundo valor!', options=cols, index=None)
 
 if valores and cor:
 
