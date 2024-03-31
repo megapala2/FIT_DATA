@@ -8,7 +8,7 @@ Para executar este projeto, siga estas etapas:
 **Clone o repositório**:
 
 ```
-git clone https://github.com/seu-usuario/miband-data-analysis.git
+git clone https://github.com/megapala2/miband-data-analysis.git
 ```
 
 **Instale as dependências**:
